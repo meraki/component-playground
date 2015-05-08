@@ -55,6 +55,7 @@ const ReactPlayground = React.createClass({
         }
         <div className={"playgroundCode"  + (this.state.expandedCode ? " expandedCode" : "")}>
           <Editor
+            ref="editor"
             onChange={this._handleCodeChange}
             className="playgroundStage"
             codeText={this.state.code}
